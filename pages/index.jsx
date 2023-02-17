@@ -57,6 +57,17 @@ const Home = () => {
         <button onClick={() => claim({ amount: 1 })}>Claim NFT </button>
 
         <WalletMultiButtonDynamic />
+
+        <footer className={styles.footer}>
+          <a
+            className={styles.Links}
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Powered by NFTLAB
+          </a>
+        </footer>
       </div>
     </>
   );
