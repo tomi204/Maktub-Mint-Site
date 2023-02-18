@@ -7,6 +7,17 @@
   width: 100vw;
   padding: 0 24px;
 }
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
 
 .iconContainer {
   display: flex;
@@ -15,6 +26,12 @@
   align-items: center;
   gap: 16px;
   padding: 16px;
+}
+.nftImage {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .h1 {
@@ -35,6 +52,21 @@
   bottom: 0;
   font-size: 20px;
   width: 100%;
+}
+.nftCard {
+  padding: 0 24px;
+}
+.btnClaim {
+  margin-top: 5%;
+  background-color: #e011a7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .links {
