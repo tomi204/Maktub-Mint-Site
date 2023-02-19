@@ -73,7 +73,7 @@ const Home = () => {
               </div>
               <div className={styles.header}>
                 <h4>Price</h4>
-                <h5>{supplyNFT}</h5>
+                <h5>1</h5>
               </div>
             </div>
           </div>

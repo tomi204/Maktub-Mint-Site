@@ -6,6 +6,7 @@
   justify-content: center;
   width: 99vw;
   padding: 0 24px;
+  background-image: url("/public/Banner_Makto_.png");
 }
 .navbar {
   display: flex;
@@ -21,9 +22,9 @@
 .mainHead {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 85%;
   padding: 16px;
   z-index: 1;
 }
@@ -93,7 +94,7 @@
 }
 .btnClaim {
   margin-top: 5%;
-  background-color: #e011a7;
+  background-color: #0854ed;
   color: white;
   border: none;
   border-radius: 8px;

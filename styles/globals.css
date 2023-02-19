@@ -24,17 +24,18 @@ select {
 }
 
 :root {
-  --background-color: #3d4858;
   --white: #ffffff;
   --tw-color1: #a855f7;
   --tw-color1-hover: #9333ea;
 }
 
 body {
-  background: var(--background-color);
+  background-image: url("/Banner_Makto_.png");
   font-family: "Inter", sans-serif;
   color: var(--white);
   display: flex;
+  background-size: cover; /* para ajustar la imagen al tamaño del div */
+  background-position: center; /* para centrar la imagen */
   margin: 0;
   text-align: center;
 }
