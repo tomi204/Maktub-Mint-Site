@@ -49,10 +49,12 @@ const Home = () => {
         </navbar>
 
         <div className={styles.nftContainer}>
+          <h2>Mint your Makto!</h2>
           <div className={styles.nftCard}>
-            <h2>Claim your NFT!</h2>
+            <h3>Random Makto!</h3>
+
             {nft?.map((nft) => (
-              <div key={nft.metadata.id} className={styles.nftCard}>
+              <div key={nft.metadata.id} className={styles.nft}>
                 <MediaRenderer
                   src={nft.metadata.image}
                   className={styles.nftImage}
@@ -64,6 +66,16 @@ const Home = () => {
                 />
               </div>
             ))}
+            <div className={styles.mainHead}>
+              <div className={styles.header}>
+                <h4>Claimeds</h4>
+                <h5>{supplyNFT}</h5>
+              </div>
+              <div className={styles.header}>
+                <h4>Price</h4>
+                <h5>{supplyNFT}</h5>
+              </div>
+            </div>
           </div>
 
           {wallet.connected ? (
@@ -71,7 +83,7 @@ const Home = () => {
               className={styles.btnClaim}
               onClick={() => claim({ amount: 1 })}
             >
-              Claim NFT
+              Mint
             </button>
           ) : (
             <button

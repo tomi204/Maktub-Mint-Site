@@ -18,6 +18,25 @@
   top: 0;
   z-index: 1;
 }
+.mainHead {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  z-index: 1;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 20px;
+  padding: 16px;
+  z-index: 1;
+}
 .footerImg {
   width: 20%;
   height: 20%;
@@ -60,7 +79,17 @@
   width: 100%;
 }
 .nftCard {
-  padding: 0 24px;
+  padding: 0 34px;
+  padding-top: 20px;
+  background-color: rgb(28, 26, 26);
+  width: 100%;
+  border-radius: 20px;
+  min-height: 420px;
+  justify-content: center;
+  align-items: center;
+}
+.nft {
+  margin-top: 5%;
 }
 .btnClaim {
   margin-top: 5%;
@@ -76,7 +105,7 @@
 }
 
 .Links {
-  color: #e011a7;
+  color: #186df798;
   text-decoration: none;
   font-size: 1.125rem;
   font-weight: 600;
