@@ -55,8 +55,10 @@ const Home = () => {
 
             {nft?.map((nft) => (
               <div key={nft.metadata.id} className={styles.nft}>
-                <MediaRenderer
-                  src={nft.metadata.image}
+                <img
+                  src={
+                    "https://i.picasion.com/pic92/29ab6907a2e49baf9ee00a649e6d3f04.gif"
+                  }
                   className={styles.nftImage}
                   style={{
                     objectFit: "contain",
