@@ -65,14 +65,7 @@ const Home = () => {
                 />
               </div>
             ))}
-            {wallet.connected ? (
-              <button
-                className={styles.btnClaim}
-                onClick={() => claim({ amount: 1 })}
-              >
-                MINT(1 SOL)
-              </button>
-            ) : null}
+
             <div className={styles.mainHead}>
               <div className={styles.header}>
                 <h4 className={styles.texts}>Minted</h4>
@@ -85,6 +78,23 @@ const Home = () => {
               </div>
             </div>
             <WalletMultiButtonDynamic />
+            <br />
+            {wallet.connected ? (
+              <button
+                className={styles.btnClaim}
+                onClick={() => claim({ amount: 1 })}
+              >
+                MINT(1 SOL)
+              </button>
+            ) : (
+              <button
+                className={styles.btnClaim}
+                onClick={() => claim({ amount: 1 })}
+              >
+                NFT Club Maktub
+              </button>
+            )}
+           
           </div>
         </div>
         <footer className={styles.footer}>
