@@ -24,13 +24,14 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   width: 90%;
   z-index: 1;
 }
 .header {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 45%;
   border-width: 1px;
   border-color: white;
   border-radius: 20px;
@@ -81,6 +82,16 @@
   padding: 0 34px;
   padding-top: 20px;
   background-color: rgb(28, 26, 26);
+  background: linear-gradient(
+    90deg,
+    #484444,
+    #323131,
+    #3b3939,
+    #424141,
+    #353333
+  );
+  background-size: 400% 400%;
+  animation: metal-brush 8s ease-in-out infinite;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
