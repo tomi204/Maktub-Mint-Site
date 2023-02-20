@@ -49,7 +49,7 @@ const Home = () => {
         </navbar>
 
         <div className={styles.nftContainer}>
-          <h2>Mint your Makto!</h2>
+          <h2>Mintea tu Makto!</h2>
           <div className={styles.nftCard}>
             <h3>Random Makto!</h3>
 
@@ -70,12 +70,12 @@ const Home = () => {
             ))}
             <div className={styles.mainHead}>
               <div className={styles.header}>
-                <h4>Claimeds</h4>
-                <h5>{supplyNFT}</h5>
+                <h4 className={styles.texts}>Claimeds</h4>
+                <h5 className={styles.outp}>{supplyNFT}</h5>
               </div>
               <div className={styles.header}>
-                <h4>Price</h4>
-                <h5>1 SOL</h5>
+                <h4 className={styles.texts}>Price</h4>
+                <h5 className={styles.outp}>1 SOL</h5>
               </div>
             </div>
           </div>
