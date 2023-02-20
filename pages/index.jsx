@@ -30,13 +30,12 @@ const Home = () => {
   const { mutateAsync: claim, isLoading, error } = useClaimNFT(program);
   const { data: metadata, isLoading: loading } = useNFTs(program);
 
-  useEffect(() => {
-    async function getClaimed() {
-      const supply = await program?.totalClaimedSupply();
-      setSupply(supply);
-    }
-    getClaimed();
-  }, []);
+  async function getClaimed() {
+    const supply = await program?.totalClaimedSupply();
+    setSupply(supply);
+  }
+  getClaimed();
+
   console.log(metadata, "metadata");
   const nft = metadata?.filter(
     (nft) => nft.metadata.name === "NFT Asset Name #7"
