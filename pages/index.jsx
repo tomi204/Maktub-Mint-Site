@@ -68,33 +68,37 @@ const Home = () => {
                 />
               </div>
             ))}
+            {wallet.connected ? (
+              <button
+                className={styles.btnClaim}
+                onClick={() => claim({ amount: 1 })}
+              >
+                Mint
+              </button>
+            ) : (
+              <button
+                className={styles.btnClaim}
+                onClick={() => claim({ amount: 1 })}
+              >
+                Connect your wallet
+              </button>
+            )}
             <div className={styles.mainHead}>
               <div className={styles.header}>
-                <h4 className={styles.texts}>Claimeds</h4>
-                <h5 className={styles.outp}>{supplyNFT}</h5>
+                <h4 className={styles.texts}>Minted</h4>
+                {supplyNFT > 0 ? (
+                  <h5 className={styles.outp}>{supplyNFT}</h5>
+                ) : (
+                  <h5 className={styles.outp}>{supplyNFT + 0}</h5>
+                )}
               </div>
               <div className={styles.header}>
                 <h4 className={styles.texts}>Price</h4>
+
                 <h5 className={styles.outp}>1 SOL</h5>
               </div>
             </div>
           </div>
-
-          {wallet.connected ? (
-            <button
-              className={styles.btnClaim}
-              onClick={() => claim({ amount: 1 })}
-            >
-              Mint
-            </button>
-          ) : (
-            <button
-              className={styles.btnClaim}
-              onClick={() => claim({ amount: 1 })}
-            >
-              Connect your wallet
-            </button>
-          )}
         </div>
         <footer className={styles.footer}>
           <a

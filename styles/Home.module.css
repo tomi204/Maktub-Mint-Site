@@ -22,10 +22,10 @@
 .mainHead {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  width: 90%;
+  width: 100%;
   z-index: 1;
 }
 .header {
@@ -75,7 +75,7 @@
   bottom: 0;
   left: 0;
   font-size: 20px;
-  width: 30%;
+  width: 50%;
   margin-bottom: 1%;
 }
 .nftCard {
@@ -107,7 +107,7 @@
   margin-top: 5%;
 }
 .outp {
-  color: #c01919;
+  color: #ffffff;
   font-size: 1rem;
 }
 .texts {
@@ -143,5 +143,9 @@
 @media (max-width: 768px) {
   .footer {
     font-size: 14px;
+    width: 100%;
+  }
+  .navbar {
+    position: absolute;
   }
 }
