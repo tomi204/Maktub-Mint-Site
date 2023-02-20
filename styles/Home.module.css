@@ -82,6 +82,10 @@
   padding: 0 34px;
   padding-top: 20px;
   background-color: rgb(28, 26, 26);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(
     90deg,
     #484444,

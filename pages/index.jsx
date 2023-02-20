@@ -26,6 +26,7 @@ const Home = () => {
     "4Rhgk4qy53uTavYFMupgHUfsRbm5gGVpcqJBvwn7cCEZ",
     "nft-drop"
   );
+
   const [supplyNFT, setSupply] = useState(0);
   const { mutateAsync: claim, isLoading, error } = useClaimNFT(program);
   const { data: metadata, isLoading: loading } = useNFTs(program);
@@ -44,10 +45,6 @@ const Home = () => {
   return (
     <>
       <div className={styles.container}>
-        <navbar className={styles.navbar}>
-          <WalletMultiButtonDynamic />
-        </navbar>
-
         <div className={styles.nftContainer}>
           <h2>Mintea tu Makto!</h2>
           <div className={styles.nftCard}>
@@ -75,14 +72,7 @@ const Home = () => {
               >
                 MINT(1 SOL)
               </button>
-            ) : (
-              <button
-                className={styles.btnClaim}
-                onClick={() => claim({ amount: 1 })}
-              >
-                Connect your wallet
-              </button>
-            )}
+            ) : null}
             <div className={styles.mainHead}>
               <div className={styles.header}>
                 <h4 className={styles.texts}>Minted</h4>
@@ -94,6 +84,7 @@ const Home = () => {
                 <h5 className={styles.outp}>1 SOL</h5>
               </div>
             </div>
+            <WalletMultiButtonDynamic />
           </div>
         </div>
         <footer className={styles.footer}>
