@@ -29,11 +29,12 @@ const Home = () => {
   const [supplyNFT, setSupply] = useState(0);
   const { mutateAsync: claim, isLoading, error } = useClaimNFT(program);
   const { data: metadata, isLoading: loading } = useNFTs(program);
-  async function getClaimed() {
-    const supply = await program?.totalClaimedSupply();
-    setSupply(supply);
-  }
+
   useEffect(() => {
+    async function getClaimed() {
+      const supply = await program?.totalClaimedSupply();
+      setSupply(supply);
+    }
     getClaimed();
   }, []);
   console.log(metadata, "metadata");
@@ -86,7 +87,6 @@ const Home = () => {
             <div className={styles.mainHead}>
               <div className={styles.header}>
                 <h4 className={styles.texts}>Minted</h4>
-
                 <h5 className={styles.outp}>{supplyNFT}</h5>
               </div>
               <div className={styles.header}>
