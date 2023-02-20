@@ -23,7 +23,7 @@ const WalletMultiButtonDynamic = dynamic(
 const Home = () => {
   const wallet = useWallet();
   const { program } = useProgram(
-    "4Rhgk4qy53uTavYFMupgHUfsRbm5gGVpcqJBvwn7cCEZ",
+    "5njTCbuCaZatcuJD2KWb8CS6K8KD98bqeWwYgtZvCuAy",
     "nft-drop"
   );
 
@@ -94,7 +94,6 @@ const Home = () => {
                 NFT Club Maktub
               </button>
             )}
-           
           </div>
         </div>
         <footer className={styles.footer}>
