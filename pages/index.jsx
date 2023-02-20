@@ -73,7 +73,7 @@ const Home = () => {
                 className={styles.btnClaim}
                 onClick={() => claim({ amount: 1 })}
               >
-                Mint
+                MINT(1 SOL)
               </button>
             ) : (
               <button
@@ -86,11 +86,8 @@ const Home = () => {
             <div className={styles.mainHead}>
               <div className={styles.header}>
                 <h4 className={styles.texts}>Minted</h4>
-                {supplyNFT > 0 ? (
-                  <h5 className={styles.outp}>{supplyNFT}</h5>
-                ) : (
-                  <h5 className={styles.outp}>{supplyNFT + 0}</h5>
-                )}
+
+                <h5 className={styles.outp}>{supplyNFT}</h5>
               </div>
               <div className={styles.header}>
                 <h4 className={styles.texts}>Price</h4>
