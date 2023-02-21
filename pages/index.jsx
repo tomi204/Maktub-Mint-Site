@@ -52,10 +52,8 @@ const Home = () => {
 
             {nft?.map((nft) => (
               <div key={nft.metadata.id} className={styles.nft}>
-                <img
-                  src={
-                    "https://i.picasion.com/pic92/29ab6907a2e49baf9ee00a649e6d3f04.gif"
-                  }
+                <Image
+                  src="/Makto.gif"
                   className={styles.nftImage}
                   style={{
                     objectFit: "contain",
@@ -111,7 +109,7 @@ const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            NFT LAB CLUB
+            Consultoría MKB
           </a>
         </footer>
       </div>
