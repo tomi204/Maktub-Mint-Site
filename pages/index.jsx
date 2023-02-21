@@ -1,5 +1,4 @@
 import dynamic from "next/dynamic";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 import {
@@ -52,14 +51,16 @@ const Home = () => {
 
             {nft?.map((nft) => (
               <div key={nft.metadata.id} className={styles.nft}>
-                <Image
-                  src="/Makto.gif"
+                <img
+                  src={
+                    "https://gateway.lighthouse.storage/ipfs/QmdhwM7Y8mmYpZqsUe3Uhv7WaqE2azw4buVrFMGm1xs4Zo"
+                  }
                   className={styles.nftImage}
                   style={{
                     objectFit: "contain",
                     borderRadius: "15px",
                   }}
-                  alt="nft"
+                  alt="nft image"
                 />
               </div>
             ))}
