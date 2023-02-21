@@ -50,7 +50,7 @@ const Home = () => {
             {nft?.map((nft) => (
               <div key={nft.metadata.id} className={styles.nft}>
                 <img
-                  src={nft.metadata.image}
+                  src={"/assets/Makto.gif"}
                   className={styles.nftImage}
                   style={{
                     objectFit: "contain",
