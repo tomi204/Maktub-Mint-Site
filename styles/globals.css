@@ -30,7 +30,7 @@ select {
 }
 
 body {
-  background-image: url("/Banner_Makto.png");
+  background-image: url("/assets/Banner_Makto.png");
   font-family: "Inter", sans-serif;
   color: var(--white);
   display: flex;

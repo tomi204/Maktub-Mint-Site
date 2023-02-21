@@ -37,9 +37,7 @@ const Home = () => {
   getClaimed();
 
   console.log(metadata, "metadata");
-  const nft = metadata?.filter(
-    (nft) => nft.metadata.name === "NFT Asset Name #7"
-  );
+  const nft = metadata?.filter((nft) => nft.metadata.name === "Makto #10");
 
   return (
     <>
@@ -52,9 +50,7 @@ const Home = () => {
             {nft?.map((nft) => (
               <div key={nft.metadata.id} className={styles.nft}>
                 <img
-                  src={
-                    "https://gateway.lighthouse.storage/ipfs/QmdhwM7Y8mmYpZqsUe3Uhv7WaqE2azw4buVrFMGm1xs4Zo"
-                  }
+                  src={nft.metadata.image}
                   className={styles.nftImage}
                   style={{
                     objectFit: "contain",

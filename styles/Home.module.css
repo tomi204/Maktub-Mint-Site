@@ -6,7 +6,6 @@
   justify-content: center;
   width: 99vw;
   padding: 0 24px;
-  background-image: url("/public/Banner_Makto_.png");
 }
 .navbar {
   display: flex;
